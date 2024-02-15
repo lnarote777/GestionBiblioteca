@@ -28,6 +28,6 @@ sealed class Usuario{
      * @property id Identificador del visitante.
      * @property nombre Nombre del visitante.
      */
-    data class Visitante (val id: String, val nombre: String)
+    data class Visitante (val id: String, val nombre: String): Usuario()
 
 }
