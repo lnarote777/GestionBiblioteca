@@ -13,6 +13,13 @@ fun main() {
 
 }
 
+/**
+ * Función que verifica si un usuario puede tomar prestado un libro.
+ *
+ * @param usuario El usuario que desea tomar prestado el libro.
+ * @param libro El libro que se desea tomar prestado.
+ * @return Un mensaje indicando si el usuario puede tomar prestado el libro.
+ */
 fun tomarPrestado(usuario: Usuario, libro: Libro): String {
     return when(usuario){
         is Usuario.Estudiante -> "El estudiante ${usuario.nombre} id: ${usuario.id} puede tomar prestado el libro '${libro.titulo}'."
